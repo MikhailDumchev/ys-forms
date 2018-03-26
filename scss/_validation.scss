@@ -1,0 +1,25 @@
+$validationRed: rgb(255, 69, 0);
+.error-message {
+    position: absolute;
+    padding-left: 30px;
+    color: $validationRed;
+    font-size: 14px;
+    white-space: nowrap;
+    background-image: url("../img/exclamation-note.svg");
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-size: 20px 20px;
+    &:hover {
+        cursor: text;
+    }
+}
+input[type=text].error,
+input[type=email].error,
+input[type=tel].error,
+textarea.error {
+    border: 1px solid $validationRed !important;
+    color: $validationRed !important;
+}
+.checkbox.error {
+    border: 1px solid $validationRed !important;
+}
